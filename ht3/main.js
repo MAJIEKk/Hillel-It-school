@@ -25,4 +25,5 @@ function phoneF() {
     }
     alert("Yoohoo! You did it!");
     document.getElementById('phoneBTN').innerHTML = `Сlick to leave a <a style="color: red; font-weight: bold;">NEW</a> number</br>current: <a style="font-weight: bold;">${phoneNumber}</a>`;
+    break;
 }
