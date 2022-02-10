@@ -16,8 +16,5 @@ function strF() {
             }
         }
     }
-    console.log(document.getElementById('strGet'));
-    document.getElementById('strGet').innerHTML = `Your strins:</br><a>${str}</a>`;
-    alert(str);
+    document.getElementById("strGet").appendChild(document.createElement("li")).appendChild(document.createTextNode(str));
 }
-// phoneNumber = prompt("Enter your phone number:")
