@@ -6,15 +6,20 @@ document.getElementById('strBTN').onclick = function () {
 
 function strF() {
     let str = prompt("Enter your string:", 'My <b>name</b> is <i>Alex</i>');
+    let newStr = "";
+    let flag =false;
     for (let i = 0; i < str.length; i++) {
         if (str[i] === "<") {
-            for (let k = 2; i + k < str.length; k++) {
-                if (str[i + k] === ">") {
-                    str = str.slice(0, i) + str.slice(i + k + 1);
-                    break;
-                }
-            }
+           flag=true;
         }
+        if (flag===false){
+            newStr+=str[i];
+        }
+        
+            if(str[i] === ">") {
+                flag=false;
+             }
+
     }
-    document.getElementById("strGet").appendChild(document.createElement("li")).appendChild(document.createTextNode(str));
+    document.getElementById("strGet").appendChild(document.createElement("li")).appendChild(document.createTextNode(newStr));
 }
