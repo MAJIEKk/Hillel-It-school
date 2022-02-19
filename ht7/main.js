@@ -9,7 +9,9 @@ function sort(arr) {
 
 function sortUpToDown(ar) {
 
-    let arr=ar;
+    let arr=[];
+    for (let item of ar)
+    arr.push(item);
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr.length - i; j++) {
             if (arr[j + 1] > arr[j]) {
