@@ -27,3 +27,7 @@ return arr;
 var res = sortUpToDown(["a", "b", "d", "c"])
 
 console.log(res);
+
+res = sort(["a", "b", "d", "c"]);
+
+console.log(res);
