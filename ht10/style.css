@@ -1,0 +1,96 @@
+.active {
+    background-color: yellow;
+}
+
+.accardion-title {
+    background-color: #ccc;
+    margin: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid black;
+    width: 570px;
+}
+
+.accardion-title::before{
+    position: absolute;
+    background-image:url('/ico/circled-right.png');
+    content:"";
+    background-size: 100% 100%;
+  display: block;
+  margin-top: 12px;
+  height: 40px;
+  width:40px;
+  left: 600px;
+  transform: translate(-50%, -50%);
+}
+
+.accardion-title.active::before{
+  transform: translate(-50%, -50%) rotate(0.25turn);
+}
+
+
+
+.accardion-container {
+    background-color: rgb(173, 173, 173);
+    width: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.accardion-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.accardion-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+    margin: 10px;
+}
+
+.accardion-text div {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px 0 0 5px;
+}
+
+.accardion-text :nth-child(odd) {
+    width: 35%;
+    margin: 5px 0 0 5px;
+}
+
+.accardion-text :nth-child(even) {
+    width: 55%;
+    margin: 5px 0 0 5px;
+}
+
+.accardion_item {
+    position: relative;
+    display: block;
+    width: 600px;
+    overflow: hidden;
+}
+
+.content {
+    display: block;
+    overflow: hidden;
+
+}
+
+.hiden {
+    display: none;
+}
+
+.show {
+    display: flex;
+}

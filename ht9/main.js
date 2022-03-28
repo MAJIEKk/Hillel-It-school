@@ -60,6 +60,7 @@ let table_fill = function (users, table_id) {
 
     for (let user of users) {
         let row = document.createElement('tr')
+        
         for (let item in user) {
             if (item == "id" || item == "first_name" || item == "last_name" || item == "email") {
                 let cell = document.createElement('th');
@@ -74,9 +75,6 @@ let table_fill = function (users, table_id) {
 let table_row_active = function(table_id){
     let tbody = document.querySelectorAll(`#${table_id} tr`);
 
-/*     let act = function(elem){
-        console.dir(elem);
-    } */
     for(let item of tbody){
         item.onclick = function(){
             if(this.className != "active"){
@@ -85,15 +83,11 @@ let table_row_active = function(table_id){
                 this.className = "";
             }
         } 
+        
         item.ondblclick = function(){
             alert(`Выбран: ${this.children[1].textContent}`)
         }
     }
-    
-
-
-    console.dir(tbody);
-
 }
 
 let table_id = 'table1';
