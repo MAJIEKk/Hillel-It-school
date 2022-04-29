@@ -52,7 +52,7 @@ body {
     margin: 10px;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
+
     position: relative
 }
 
@@ -112,15 +112,14 @@ body {
 }
 
 .popup-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
+    position: relative;
+    top: 14px;
+    left: 0px;
     transition: all 200ms;
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
-    
+    color: #333;    
 }
 
 .showTitlePopup,

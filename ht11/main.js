@@ -26,9 +26,9 @@
         popup.className = "popup";
         popup.innerHTML =
             `<div class="popup-content">
-                <a class="popup-close" href="#">&times;</a>
                 <span class="showTitlePopup">${title}</span>
                 <span class="showDatePopup">${date}</span>
+                <a class="popup-close" href="#">&times;</a>
                 <span class="showDescriptionPopup">${description}</span>
             </div>`;
         return popup;
