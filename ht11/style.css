@@ -1,0 +1,142 @@
+body {
+    margin: 0 0 0 0;
+}
+
+.itemsList {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blockItemPic {
+    display: flex;
+    min-height: 120px;
+    width: 100%;
+    max-width: 30%;
+    background: grey;
+    margin: 0.5rem;
+    align-items: center;
+    border: 2px solid black;
+    margin: 15px 0px;
+}
+
+.itemsListRow {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.showItem {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.showTitle,
+.showDate,
+.showPreview,
+.moreBTN {
+    border: 1px solid black;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    line-height: 1.5;
+    margin: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative
+}
+
+.showPreview {
+    width: 90%;
+    display: block;
+    text-align: center;
+
+}
+
+.showIsPopular {
+    position: absolute;
+    top: -15px;
+    right: -30px;
+    background: #c7c1be;
+    transform: rotate(30deg);
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 2px 8px;
+}
+
+.moreBTN {
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+/* popup */
+.popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+}
+
+.popup-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    min-width: 20%;
+    max-width: 30%;
+    min-height: 40%;
+    padding: 10px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.popup-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    
+}
+
+.showTitlePopup,
+.showDatePopup {
+    width: 40%;
+    border: 1px solid black;
+    margin: 10px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.showDescriptionPopup {
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+}
